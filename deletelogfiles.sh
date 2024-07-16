@@ -5,7 +5,7 @@ Y="\e[33m"
 N="\e[0m"
 SOURCE_DIR="/tmp/sourcefile.log"
 #checking dir eit or not
-if [ ! -d SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
 then
     echo "file dos not exit "
 if
@@ -14,4 +14,5 @@ FILESTODELETE=$(find $SOURCE_DIR  -type f -mtime+14 -name "*.log")
 while IFS= read -r line
 do 
   echo "deleting file $line "
+  rm -rf $line
  done <<< $FILESTODELETE 
