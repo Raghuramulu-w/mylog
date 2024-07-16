@@ -11,7 +11,7 @@ then
     exit 1
 fi
 #finding .log file more than 14 days
-FILESTODELETE=$(find $SOURCE_DIR  -type f -mtime +14 -name "*.log")
+FILESTODELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.log")
 while IFS= read -r line
 do 
   echo "deleting file $line "
