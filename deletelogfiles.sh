@@ -3,7 +3,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-SOURCE_DIR=/tmp/sourcefile.log
+SOURCE_DIR="/tmp/sourcefile.log"
 #checking dir eit or not
 if [ ! -d SOURCE_DIR ]
 then
@@ -13,5 +13,5 @@ if
 FILESTODELETE=$(find $SOURCE_DIR  -type f -mtime+14 -name "*.log")
 while IFS= read -r line
 do 
-  echo "deleting file $line"
+  echo "deleting file $line "
  done <<< $FILESTODELETE 
