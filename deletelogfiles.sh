@@ -17,3 +17,4 @@ do
   echo "deleting file $line "
   rm -rf $line
  done <<< $FILESTODELETE 
+ 
