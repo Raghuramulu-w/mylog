@@ -9,6 +9,6 @@ logfile=$(find $SOURCE_DIR -type f -mtime +14 -name "*.log")
 while IFS= read -r line
 do
    echo "deleting files $line"
-    rm -r $line
-done<$logfile
+    rm -rf $line
+done<<<$logfile
 
