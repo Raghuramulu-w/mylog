@@ -1,6 +1,6 @@
 #!/bin/bash
-DISK_USAGE=$(df - hT | grep xfs)
+DISK_USAGE=$(df - hT | grep -vE 'tmp|FILE')
 while IFS= read line
 do 
  usage=$(echo $line | awk '{print$6F}'| cut -d % -f1)
- done < $DISK_USAGE
+ done << $DISK_USAGE
