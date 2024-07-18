@@ -11,3 +11,4 @@ do
  message+="high usage $partition on $usage"
  fi
  done <<< $DISK_USAGE
+ echo "message :$message"
