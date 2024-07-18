@@ -7,7 +7,7 @@ then
 fi
 while IFS= read -r line
 do 
-log-file=$(echo $line | find . -type f -mtime +14)
-echo " old log files are $log_file"
+logfile=$(echo $line | find . -type f -mtime +14)
+echo " old log files are $logfile"
 done<<<$SOURCE_DIR
 
