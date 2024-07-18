@@ -1,5 +1,5 @@
 #!/bin/bash
-SOURCE_DIR="/tmp/sourcefile.log"
+SOURCE_DIR="/tmp/sourceefile.log"
 if [ ! -d $SOURCE_DIR ]
 then 
    echo "file not exit"
