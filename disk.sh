@@ -7,6 +7,6 @@ do
  partition=$(echo $line | awk '{print $1F}')
  if [ $partition -ge DISK_TREADSHOLD ]
  then
- echo "high usage $partition : $usage
+ echo "high usage $partition : $usage"
  fi
  done <<< $DISK_USAGE
