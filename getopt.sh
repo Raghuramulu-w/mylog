@@ -8,7 +8,7 @@ echo "FRUITNAMES specify fruits"
 echo "vegitables specify vegies"
 
 }
-while getopt ":f:veg:h" org 
+while getopt ":f:veg:h" org ;
 do
     case $org in
       f) FRUITNAMES="$OPTARGS";;
