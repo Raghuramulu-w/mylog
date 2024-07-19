@@ -6,9 +6,10 @@ echo "usage :: $(basename $0) "
 echo "option"
 echo "FRUITNAMES specify fruits"
 echo "vegitables specify vegies"
+echo "h : help and exit"
 
 }
-while getopt ":f:veg:h" org; do
+while getopts ":f:veg:h" org; do
     case $org in
       f) FRUITNAMES="$OPTARG";;
       veg) VEGITABLES="$OPTARG";;
@@ -16,7 +17,7 @@ while getopt ":f:veg:h" org; do
        #\?) echo "invalid option USAGE exit"
     esac
 done
-if [ -z "$FRUITNAMES" ]||[ -z "$VEGITABLES" ]
+if [ -z "$FRUITNAMES" ] || [ -z "$VEGITABLES" ]
 then
     echo "both are manditory to enter"
     USAGE
