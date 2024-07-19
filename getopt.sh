@@ -14,7 +14,7 @@ while getopts ":f:v:h" org; do
       f)FRUITNAMES="$OPTARG";;
       v)VEGITABLES="$OPTARG";;
        h) USAGE ; exit 1;;
-       \?) echo "invalid option :" >&2; USAGE; exit 1;;
+       \?) echo "invalid option :"; USAGE; exit 1;;
 
     esac
 done
