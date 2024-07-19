@@ -19,8 +19,8 @@ do
 done
 if [ -z $FRUITNAMES ] || [ -z $VEGITABLES ]
 then
-echo "both are manditory to enter"
-USAGE
-exit
+    echo "both are manditory to enter"
+    USAGE
+    exit 1
 fi
 echo "fruits names are $FRUITNAMES vegitable name are $VEGITABLES "
