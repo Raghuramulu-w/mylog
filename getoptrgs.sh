@@ -17,7 +17,7 @@ while getopts ":n:w:h " opt; do
     \?) echo "invalid option:" USAGE ;exit 1 ;;
   esac
 done
-if [ -z $NAME ] || [ -z $WISHES ]
+if [ -z $NAME ]||[ -z $WISHES ]
 then
     echo "both N and W are mandatory options"
     USAGE 
