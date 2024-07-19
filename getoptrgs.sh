@@ -21,7 +21,7 @@ if [ -z $NAME ]||[ -z $WISHES ]
 then
     echo "both N and W are mandatory options"
     USAGE 
-    exit 1
+    #exit 1
 fi
 echo " hai $NAME : $WISHES iam learning devops"
 
