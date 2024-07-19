@@ -8,10 +8,10 @@ USAGE(){
     echo "-w : specify wishes ex :- goodmorning"
     echo "h: help and exit "
 }
-while getopts " :n:w:h " opt; do
+while getopts ':n:w:h' opt; do
   case $opt in 
-    n) NAME="$OPTARG";;
-    w) WISHES="$OPTARG";;
+    n) NAME=$OPTARG;;
+    w) WISHES=$OPTARG;;
     h|*) USAGE ; exit 1;;
     :)  USAGE ; exit 1;;
     #\?) echo "invalid option:" USAGE ;exit 1 ;;
@@ -21,7 +21,7 @@ if [ -z $NAME ]||[ -z $WISHES ]
 then
     echo "both N and W are mandatory options"
     USAGE 
-    #exit 1
+    exit 1
 fi
 echo " hai $NAME : $WISHES iam learning devops"
 
