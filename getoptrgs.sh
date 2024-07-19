@@ -2,7 +2,7 @@
 NAME=""
 WISHES=""
 USAGE(){
-    echo "usage :: $(basename $0) -n <N> name : <w> wishes"
+    echo "usage ::  $0 -n <N> name : <w> wishes"
     echo "options::"
     echo "-n :specify name which is mandatery"
     echo "-w : specify wishes ex :- goodmorning"
