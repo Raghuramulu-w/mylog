@@ -16,7 +16,7 @@ while getopt ":f:veg:h" org ;do
        #\?) echo "invalid option USAGE exit"
     esac
 done
-if [ -z "$FRUITNAMES" ] || [ -z "$VEGITABLES" ]
+if [ -z "$FRUITNAMES" ]||[ -z "$VEGITABLES" ]
 then
     echo "both are manditory to enter"
     USAGE
