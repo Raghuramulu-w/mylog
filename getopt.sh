@@ -3,7 +3,7 @@ FRUITNAMES=""
 VEGITABLES=""
 while getopt ":f:veg:h" org 
 do
-    case $org
+    case $org in
       f) FRUITNAMES="$OPTARGS";;
       veg) VEGITABLES="$OPTARGS";;
        h) USAGE ; exit 1
