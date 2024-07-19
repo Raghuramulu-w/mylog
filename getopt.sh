@@ -2,7 +2,7 @@
 FRUITNAMES=""
 VEGITABLES=""
 USAGE(){
-echo "usage :: $(basename $0) " 
+echo "usage :: $(basename $0) -f FRUITNAMES -v VEGITABLES" 
 echo "option"
 echo "FRUITNAMES specify fruits"
 echo "vegitables specify vegies"
