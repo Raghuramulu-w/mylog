@@ -9,8 +9,8 @@ echo "vegitables specify vegies"
 echo "h : help and exit"
 
 }
-while getopts ":f:veg:h" org; do
-    case $org in
+while getopts ":f:veg:h" opt; do
+    case $opt in
       f)FRUITNAMES="$OPTARG";;
       veg)VEGITABLES="$OPTARG";;
        h)USAGE ; exit 1
