@@ -14,7 +14,7 @@ while getopts ":f:v:h" org; do
       f)FRUITNAMES="$OPTARG";;
       v)VEGITABLES="$OPTARG";;
        h)USAGE ; exit 1
-       #\?) echo "invalid option USAGE exit"
+       \?) echo "invalid option USAGE exit"
     esac
 done
 if [ -z "$FRUITNAMES" ] || [ -z "$VEGITABLES" ]
