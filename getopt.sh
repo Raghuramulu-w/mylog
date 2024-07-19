@@ -13,8 +13,8 @@ while getopts ":f:v:h" org; do
     case $org in
       f)FRUITNAMES="$OPTARG";;
       v)VEGITABLES="$OPTARG";;
-       h)USAGE ; exit 1;;
-       /?) echo "invalid option :" > &2; USAGE; exit;;
+       h) USAGE ; exit 1;;
+       \?) echo "invalid option :" >&2; USAGE; exit;;
 
     esac
 done
