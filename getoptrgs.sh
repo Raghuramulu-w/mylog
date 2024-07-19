@@ -8,7 +8,7 @@ USAGE(){
     echo "-w : specify wishes ex :- goodmorning"
     echo "h: help and exit "
 }
-while getopts=":n:w:h" opt; do
+while getopts ":n:w:h " opt; do
   case $opt in 
     n) NAME="$OPTRG";;
     w) WISHES="$OPTARG";;
