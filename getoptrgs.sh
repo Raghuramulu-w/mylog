@@ -10,8 +10,8 @@ USAGE(){
 }
 while getopts=":n:w:h" opt; do
   case $opt in 
-    n) NAME="$optargs";;
-    w) WISHES="$optargs";;
+    n) NAME="$OPTRG";;
+    w) WISHES="$OPTARG";;
     h|*) USAGE ; exit 1;;
     :)  USAGE ; exit 1;;
     \?) echo "invalid option:" USAGE ;exit 1 ;;
