@@ -11,8 +11,8 @@ echo "h : help and exit"
 }
 while getopts ":f:veg:h" org; do
     case $org in
-      f) FRUITNAMES="$OPTARG";;
-      veg) VEGITABLES="$OPTARG";;
+      f) FRUITNAMES="$ORGARG";;
+      veg) VEGITABLES="$ORGARG";;
        h) USAGE ; exit 1
        #\?) echo "invalid option USAGE exit"
     esac
