@@ -14,7 +14,7 @@ while getopts ":n:w:h" opt; do
     w) WISHES="$OPTARG";;
     h) USAGE ; exit 1;;
     :)  USAGE ; exit 1;;
-    \?) echo "invalid option:" USAGE ;exit 1 ;;
+    \?) echo "invalid option:"$OPTARG"" >&2; USAGE ;exit 1 ;;
   esac
 done
 if [ -z "$NAME" ] ;
