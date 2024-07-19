@@ -10,8 +10,8 @@ echo "vegitables specify vegies"
 }
 while getopt ":f:veg:h" org; do
     case $org in
-      f) FRUITNAMES="$OPTARGS";;
-      veg) VEGITABLES="$OPTARGS";;
+      f) FRUITNAMES="$OPTARG";;
+      veg) VEGITABLES="$OPTARG";;
        h) USAGE ; exit 1
        #\?) echo "invalid option USAGE exit"
     esac
