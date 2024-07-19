@@ -11,7 +11,7 @@ USAGE(){
 while getopts ":n:w:h " opt; do
   case $opt in 
     n) NAME="$OPTRG";;
-    w) WISHES="$OPTARG";;
+s    w) WISHES="$OPTARG";;
     h|*) USAGE ; exit 1;;
     :)  USAGE ; exit 1;;
     \?) echo "invalid option:" USAGE ;exit 1 ;;
@@ -27,4 +27,3 @@ echo "hai $NAME : $WISHES iam learning devops"
 
 
 
-done
