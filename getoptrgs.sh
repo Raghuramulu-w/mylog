@@ -2,7 +2,7 @@
 NAME=""
 WISHES=""
 USAGE(){
-    echo "usage ::$(basename $0) <N> name : <w> wishes"
+    echo "usage :: $(basename $0) <N> name : <w> wishes"
     echo "options::"
     echo "-n :specify name which is mandatery"
     echo "-w : specify wishes ex :- goodmorning"
@@ -21,8 +21,9 @@ if [ -z $NAME ] || [ -z $WISHES ]
 then
     echo "both N and W are mandatory options"
     USAGE 
+    exit 1
 fi
-echo "hai $NAME : $WISHES iam learning devops"
+echo " hai $NAME : $WISHES iam learning devops"
 
 
 
